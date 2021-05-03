@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the schematic and layout for the custom stepper motor driver developed for the robotic arm mounted on the MIT Bioinstrumentation Lab rover. This information is found in the `Stepper CANBus V2` folder.
+This repository contains the Autodesk Eagle schematic and layout for the custom stepper motor driver developed for the robotic arm mounted on the MIT Bioinstrumentation Lab rover. This information is found in the `Stepper CANBus V2` folder.
 
 The driver had to be able to 1) fit in a CANBus network, 2) require the fewest numbers of wires to operate (in this case, power, ground, and the two CANBus lines), and 3) run on 21 V. What resulted from these constraints is a stepper driver that can be used universally with 24 V bipolar stepper motors and can be easily modified via the interface of the mounted Teensy. Despite the fact that the PCB shape is tailored to this robotic arm, multiple of these drivers can be linked together in any desired daisy chained CANBus network, as long as the last driver in the chain has the switch turned on to activate the 120 Ohm terminator resistor.
 
